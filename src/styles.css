@@ -1,1 +1,52 @@
-/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */ 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import "~bootstrap/dist/css/bootstrap.css";
+h1, button, p, h2, input, a{
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+li{
+    font-family: "Roboto", sans-serif;
+    /* font-weight: bold; */
+}
+i:hover{
+    animation: wiggle 2s linear infinite;
+    cursor: progress;
+}
+@keyframes wiggle {
+  0%, 7%{
+      transform: rotateZ(0);
+  }
+  15% {
+      transform: rotateZ(-10deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+}
+.wiggly{
+  animation: bounce 2s infinite;
+}
+@keyframes bounce{
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+40% {
+    transform: translateY(-10px);
+  }
+60% {
+    transform: translateY(-10px);
+  }
+}
