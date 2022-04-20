@@ -1,4 +1,4 @@
-# GitSearch.
+# Goals.
 #### By **Williams Oditi**
 ## Table of Contents
 + [Description](#Description)
